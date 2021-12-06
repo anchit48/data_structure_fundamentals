@@ -8,10 +8,16 @@ from collections import Counter, OrderedDict
 
 
 def get_word_count(name):
+    """
+
+    :param name: name
+    :return: OrderedDict
+    """
     return OrderedDict(Counter(name.split()))
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    wc_dist = get_word_count('I love Paris Paris is in France France is in Europe')
+    sentence = input()
+    wc_dist = get_word_count(sentence)
     print(wc_dist)
